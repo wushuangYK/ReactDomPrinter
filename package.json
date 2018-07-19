@@ -2,7 +2,7 @@
   "name": "reactdomprinter",
   "version": "1.1.0",
   "description": "help print dom in chrome",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "webpack --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode production"
