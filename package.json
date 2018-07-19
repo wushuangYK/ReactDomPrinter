@@ -2,10 +2,9 @@
   "name": "reactdomprinter",
   "version": "1.1.1",
   "description": "help print dom in chrome",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "webpack --config webpack.config.js --mode development",
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -23,21 +22,15 @@
     "url": "https://github.com/wushuangYK/ReactDomPrinter/issues"
   },
   "homepage": "https://github.com/wushuangYK/ReactDomPrinter#readme",
-  "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-import": "^1.6.3",
-    "babel-preset-env": "^1.6.1",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "html2canvas": "^1.0.0-alpha.12",
     "pdfmake": "^0.1.37",
     "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "webpack": "^4.16.1",
-    "webpack-cli": "^3.1.0"
-  },
-  "devDependencies": {
-    "babel-plugin-transform-class-properties": "^6.24.1"
+    "react": "^16.4.1"
   }
 }
