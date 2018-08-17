@@ -1,13 +1,19 @@
 /**
- * Created by wushuang on 2018/1/18.
+ * Created by wushuang on 2018/8/17.
  */
-const path = require('path');
+const path = require("path");
 
-const config = {
-    entry: './app.js',
+module.exports = {
+    mode: "development",
+    //入口文件
+    entry: {
+        main: './index.js'
+    },
+    //出口文件
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js'
+        path: path.resolve(__dirname, './lib'),
+        filename: "[name].js",
+        publicPath: '/lib/'
     },
     module: {
         rules: [
@@ -18,12 +24,11 @@ const config = {
                 options: {
                     presets: [["env"],["react"]],
                     plugins: [
-                        "transform-class-properties"
+                        "transform-class-properties",
                     ]
                 }
             }
         ]
-    }
+    },
+    plugins: []
 };
-
-module.exports = config;
