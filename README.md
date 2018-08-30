@@ -1,3 +1,2 @@
-# ReactDomPrinter
-##### Note: version before 1.1.8 has fatal error.  
-##### help print dom in chrome, using pdfmake and html2canvas  
+# react-dom2pdf
+### convert dom to pdf using html2canvas and pdfmake
