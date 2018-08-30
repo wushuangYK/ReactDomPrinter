@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wushuangYK/ReactDomPrinter.git"
+    "url": "git+https://github.com/wushuangYK/react-dom2pdf.git"
   },
   "keywords": [
     "react",
@@ -20,9 +20,9 @@
   "author": "siver",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wushuangYK/ReactDomPrinter/issues"
+    "url": "https://github.com/wushuangYK/react-dom2pdf/issues"
   },
-  "homepage": "https://github.com/wushuangYK/ReactDomPrinter#readme",
+  "homepage": "https://github.com/wushuangYK/react-dom2pdf#readme",
   "dependencies": {
     "html2canvas": "^1.0.0-alpha.12",
     "pdfmake": "^0.1.37",
