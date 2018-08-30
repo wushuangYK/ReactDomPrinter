@@ -1,1 +1,1 @@
-module.exports = require('./lib/ReactDomPrinter').default;
+module.exports = require('./lib/Dom2Pdf').default;

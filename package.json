@@ -1,7 +1,7 @@
 {
-  "name": "reactdomprinter",
-  "version": "1.1.8",
-  "description": "help print dom in chrome",
+  "name": "react-dom2pdf",
+  "version": "0.0.1",
+  "description": "transform dom to pdf",
   "main": "main.js",
   "scripts": {
     "prepublish": "rm -rf lib && npm run babel",

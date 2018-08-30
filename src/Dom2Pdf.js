@@ -8,8 +8,9 @@ import html2canvas from 'html2canvas'
 import pdfMake from 'pdfmake/build/pdfmake'
 import pdfFonts from 'pdfmake/build/vfs_fonts'
 
-export default class ReactDomPrinter extends React.Component {
+export default class Dom2Pdf extends React.Component {
     static propTypes = {
+        btnText: PropTypes.string,
         /** Dom'id to print */
         domID: PropTypes.string.isRequired,
         pageHeight: PropTypes.number,
@@ -28,11 +29,12 @@ export default class ReactDomPrinter extends React.Component {
             PropTypes.object,
             PropTypes.func,
         ]),
-        pageSize: PropTypes.string,
+        pageSize: PropTypes.string
     };
 
     //a4纸的尺寸[595.28,841.89]，html页面生成的canvas在pdf中图片的宽高
     static defaultProps = {
+        btnText: "转PDF",
         pageHeight: 841.89,
         pageWidth: 595.28,
         margin: {
@@ -138,7 +140,7 @@ export default class ReactDomPrinter extends React.Component {
 
     render() {
         return (
-            <button onClick={this.print}>打印</button>
+            <button onClick={this.print}>{this.props.btnText}</button>
         )
     }
 }
